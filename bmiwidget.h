@@ -16,6 +16,14 @@ class BMIWidget : public QWidget
 public:
     BMIWidget(QWidget *parent = nullptr);
     ~BMIWidget();
+    void getValue(float val);
+
+private slots:
+    void on_pb_calculate_clicked();
+
+    void on_pb_clear_clicked();
+
+    void on_pb_close_clicked();
 
 private:
     Ui::BMIWidget *ui;
